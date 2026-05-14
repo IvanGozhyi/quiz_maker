@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import QuizCard from "../../components/quiz_card/QuizCard.tsx";
+import {useNavigate} from "react-router-dom";
 
 interface Quiz {
     id: number;
@@ -10,6 +11,7 @@ interface Quiz {
 }
 
 function QuizList(){
+    const navigate = useNavigate();
     const [quizzes, setQuizzes] = useState<Quiz[]>([]);
     const [loading, setLoading] = useState(true);
 
@@ -39,6 +41,10 @@ function QuizList(){
         }
     };
     if (loading) return <div>Loading...</div>;
+
+    const handleNavigate = () =>{
+       navigate("/create");
+    }
     return (
         <div className="container">
             {quizzes.map((quiz) => (
@@ -51,6 +57,8 @@ function QuizList(){
                 />
                 ))}
             {quizzes.length === 0 && <p>You haven't created any quizzes yet.</p>}
+
+            <button onClick={handleNavigate}>Add new quiz</button>
         </div>
     );
 }
