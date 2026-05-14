@@ -1,4 +1,5 @@
 import {useNavigate} from "react-router-dom";
+import "./QuizCard.css";
 
 interface QuizCardProps {
     id: number;
@@ -11,13 +12,13 @@ function QuizCard({ id, title, questionCount, onDelete }: QuizCardProps) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/quizzes/:${id}`);
+        navigate(`/quizzes/${id}`);
     }
     return (
-        <div onClick={handleClick}>
+        <div className="card" onClick={handleClick}>
             <h3>{title}</h3>
             <span>{questionCount} questions</span>
-            <button onClick={()=>onDelete(id)}>Delete</button>
+            <button className="dlt-button" onClick={()=>onDelete(id)}>Delete</button>
         </div>
     );
 }

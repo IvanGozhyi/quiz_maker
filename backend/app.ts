@@ -54,9 +54,17 @@ app.get('/quizzes', async (req, res) => {
 
 app.get('/quizzes/:id', async (req, res) => {
     try{
-        const id  = parseInt(req.params.id);
+        const quizId = parseInt(req.params.id, 10);
+
+        if (isNaN(quizId)) {
+            return res.status(400).json({ error: 'Invalid quiz ID format' });
+        }
+
         const quiz = await prisma.quiz.findUnique({
-            where: { id: id },
+            where: {
+                id: quizId
+            },
+
             include: { questions: true }
         });
 

@@ -1,0 +1,15 @@
+.add-button {
+  width: 200px;
+  height: 50px;
+  background: green;
+  color: white;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.add-button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=QuizList.css.map */

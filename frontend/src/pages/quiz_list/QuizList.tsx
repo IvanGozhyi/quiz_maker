@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import QuizCard from "../../components/quiz_card/QuizCard.tsx";
 import {useNavigate} from "react-router-dom";
+import "./QuizList.css";
 
 interface Quiz {
     id: number;
@@ -58,7 +59,7 @@ function QuizList(){
                 ))}
             {quizzes.length === 0 && <p>You haven't created any quizzes yet.</p>}
 
-            <button onClick={handleNavigate}>Add new quiz</button>
+            <button className="add-button" onClick={handleNavigate}>Add new quiz</button>
         </div>
     );
 }
