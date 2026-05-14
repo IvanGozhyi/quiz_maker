@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78491bc-c3cb-41b0-a824-ff8d8d9460ab" name="Changes" comment="" />
+    <list default="true" id="c78491bc-c3cb-41b0-a824-ff8d8d9460ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/quiz_form/QuizForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/quiz_creation/QuizCreation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/quiz_details/QuizDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/quiz_list/QuizList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/Routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -78,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1778744965846</updated>
       <workItem from="1778744966917" duration="2905000" />
-      <workItem from="1778747923127" duration="1142000" />
+      <workItem from="1778747923127" duration="3109000" />
     </task>
     <servers />
   </component>
