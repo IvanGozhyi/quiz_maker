@@ -11,7 +11,8 @@ interface QuizCardProps {
 function QuizCard({ id, title, questionCount, onDelete }: QuizCardProps) {
     const navigate = useNavigate();
 
-    const handleClick = () => {
+    const handleClick = (e:any) => {
+        e.preventDefault();
         navigate(`/quizzes/${id}`);
     }
     return (
